@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE AI | MUHAMMAD TAQI</title>
+    <style>
+        :root {
+            --royal-navy: #0a192f;
+            --gold: #c19e5f;
+            --header-height: 60px;
+            --footer-height: 30px;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: var(--royal-navy);
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Top Branding Bar */
+        .branding-header {
+            height: var(--header-height);
+            background: linear-gradient(to right, #0d1b2a, #1b263b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid var(--gold);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            z-index: 100;
+            position: relative;
+        }
+
+        .branding-header h1 {
+            color: var(--gold);
+            font-size: 24px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Container that hides the original "Muse" header */
+        .viewport-container {
+            position: relative;
+            height: calc(100vh - var(--header-height) - var(--footer-height));
+            width: 100%;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        iframe {
+            position: absolute;
+            top: -65px; /* Adjust this value to perfectly hide the Muse header */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 65px);
+            border: none;
+        }
+
+        /* Credits Footer */
+        .credits-footer {
+            height: var(--footer-height);
+            background: #000;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+            border-top: 1px solid #333;
+        }
+
+        .credits-footer b {
+            margin-left: 5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="branding-header">
+        <h1>EMPIRE AI</h1>
+    </header>
+
+    <div class="viewport-container">
+        <iframe 
+            src="https://muse-ai-mt.oneapp.dev/" 
+            title="CORE AI Portal"
+            allow="clipboard-write">
+        </iframe>
+    </div>
+
+    <footer class="credits-footer">
+        CREATED BY <b>MUHAMMAD TAQI</b>
+    </footer>
+
+</body>
+</html>
